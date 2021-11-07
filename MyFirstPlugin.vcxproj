@@ -83,11 +83,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <VcpkgTriplet>$(VcpkgUserTriplet)-custom</VcpkgTriplet>
@@ -182,7 +182,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "E:\Mod Organizer 2\mods\ClibTestPlugin\SKSE\Plugins" /Y</Command>
+      <Command>copy "$(TargetPath)" "E:\Mod Organizer 2\mods\OnHit Animations Framework\SKSE\Plugins" /Y</Command>
       <Message>Copy the compiled dll to the MO2 directory</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -213,7 +213,7 @@
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "E:\Mod Organizer 2\mods\ClibTestPlugin\SKSE\Plugins" /Y</Command>
+      <Command>copy "$(TargetPath)" "E:\Mod Organizer 2\mods\OnHit Animations Framework\SKSE\Plugins" /Y</Command>
       <Message>Copy the compiled dll to the MO2 directory</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>

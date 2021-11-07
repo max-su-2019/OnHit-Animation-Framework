@@ -12,8 +12,6 @@ namespace MaxsuOnHitAnimFW
 
 		static bool RegisterOnHitEvent();
 
-
-
 	private:
 
 		OnHitEventHandler() = default;
